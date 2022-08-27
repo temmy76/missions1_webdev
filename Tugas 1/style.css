@@ -3,14 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
-.container {
-	width: 100%;
-	height: 100vh;
-	display: grid;
-	font-size: larger;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+.template-area {
 	grid-template-areas:
 		"merah  hijau   hijau       ungu        ungu"
 		"merah  ping    hijaumuda   hijaumuda   hijaumuda"
@@ -20,51 +13,99 @@ body {
 		"jingga kuning  kuning      birutua     birutua";
 }
 
+.template-columns {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.template-rows {
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-display {
+	display: grid;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	font-size: larger;
+}
+
 .item {
 	width: 100%;
-	display: flex;
 	padding: 50px;
-	justify-content: center;
-	align-items: center;
 	font-family: sans-serif;
 	box-sizing: border-box;
 }
 
-.merah {
+.text-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.yellow-text {
 	color: yellow;
-	grid-area: merah;
+}
+
+.bg-red {
 	background-color: #e06666;
+}
+
+.bg-green {
+	background-color: #00a15d;
+}
+
+.bg-purple {
+	background-color: #8e7cc3;
+}
+
+.bg-pink {
+	background-color: #ff9fd5;
+}
+
+.bg-gold {
+	background-color: #ffc800;
+}
+
+.bg-yellow {
+	background-color: #ffff00;
+}
+
+.bg-blue {
+	background-color: #3d85c6;
+}
+
+.merah {
+	grid-area: merah;
 }
 .hijau {
 	grid-area: hijau;
-	background-color: #00a15d;
 }
 .ungu {
 	grid-area: ungu;
-	background-color: #8e7cc3;
 }
+
 .pink {
 	grid-area: ping;
-	background-color: #ff9fd5;
 }
+
 .hijau-muda {
 	grid-area: hijaumuda;
-	background-color: #ffc800;
 }
+
 .biru {
 	grid-area: biru;
-	background-color: #00a15d;
 }
+
 .jingga {
 	grid-area: jingga;
-	background-color: #ffc800;
 }
+
 .kuning {
 	grid-area: kuning;
-	background-color: #ffff00;
 }
+
 .biru-tua {
-	color: yellow;
 	grid-area: birutua;
-	background-color: #3d85c6;
 }
