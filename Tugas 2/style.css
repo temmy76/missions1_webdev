@@ -1,14 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&family=Source+Serif+Pro:wght@300&display=swap");
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 }
 
 li,
-a,
-button {
-	font-family: sans-serif;
+a {
+	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	text-decoration: none;
@@ -39,26 +40,67 @@ header {
 .nav-links li a {
 	color: #9399a1;
 	transition: all 0.3s ease 0s;
+	font-weight: bold;
 }
 
 .nav-links li a:hover {
 	text-decoration: underline;
 }
 
+.container {
+	margin: 50px 200px;
+}
+
 .highlight {
 	background-color: rgb(233, 236, 239);
-	margin: 50px 200px;
-	padding: 25px 50px 25px 25px;
-	line-height: 50px;
+	padding: 25px 25px 25px 25px;
+	line-height: 40px;
 	border-radius: 5px;
+}
+
+.highlight h3 {
+	color: lightslategray;
 }
 
 button {
 	font-weight: bolder;
-	box-shadow: -2px 1px 1px #888888;
-	padding: 10px;
+	box-shadow: 0px 1px 1px #888888;
+	padding: 5px 10px 5px;
 	border-color: transparent;
 	background-color: white;
 	box-shadow: 5cm;
+	font-size: smaller;
+	font-weight: bold;
 	border-radius: 5px;
+	cursor: pointer;
+}
+
+.content {
+	display: flex;
+	margin-top: 20px;
+	padding: 25px 50px 25px 25px;
+}
+.picture {
+	margin-right: 2rem;
+}
+
+.preview h3 a {
+	font-size: larg er;
+	color: #de3f1c;
+	font-weight: bold;
+	font-family: "Source Serif Pro", serif;
+}
+
+.preview h3 a:hover {
+	text-decoration: underline;
+}
+
+.preview p {
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+.title {
+	margin-top: 0px;
+	margin-bottom: 1rem;
 }
